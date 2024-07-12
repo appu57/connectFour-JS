@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #31323f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-board {
+    height: 700px;
+    width: 700px;
+    background-color: rgb(65, 65, 223);
+    border: 10px solid blue;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* within game board we have many grid cells whose width is 80px now within 700px you can accomodate around 8 cells but there is a margin so it can take around 7 cells , usually we use grid to display grid like structure , but we can use flex-wrap:wrap , which will accomodate how much ever div it can within the width and rest of the div is moved to next line and that is how we can get grid like structure*/
+}
+
+.grid-cell{
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid blue;
+    cursor: pointer;
+}
+.yellow-cell{
+    background-color: yellow;
+}
+
+
+.red-grid{
+    background-color: red;
+}
+
+
+.winner-display{
+    font-size: 33px;
+    color: blue;
+    margin: 50px;
+    text-align: center;
+}
